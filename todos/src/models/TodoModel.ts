@@ -1,4 +1,4 @@
-class TodoModel {
+export class TodoModel {
     rowNumber: number;
     rowDescription: string;
     rowAssigned: string;
