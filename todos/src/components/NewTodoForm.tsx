@@ -5,7 +5,7 @@ export const NewTodoForm: React.FC<{addTodo: Function}> = (props) => {
   const [description, setDescription] = useState("");
 
   const submitTodo = () => {
-    if (assigned.trim.length !== 0 && description.trim.length !== 0) {
+    if (assigned.trim().length !== 0 && description.trim().length !== 0) {
       props.addTodo(assigned, description);
       setAssigned("");
       setDescription("");

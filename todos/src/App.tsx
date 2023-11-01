@@ -18,7 +18,7 @@ export const App = () => {
   ]);
 
   const addTodo = (assigned: string, description: string) => {
-    let rowNumber = 0;
+    let rowNumber: number = 0;
 
     if (todos.length > 0) {
       rowNumber = todos[todos.length - 1].rowNumber + 1;
@@ -26,7 +26,7 @@ export const App = () => {
       rowNumber = 1;
     }
 
-    const newTodo = {
+    const newTodo: {rowNumber: number, rowDescription: string, rowAssigned: string} = {
       rowNumber: rowNumber,
       rowDescription: description,
       rowAssigned: assigned,
