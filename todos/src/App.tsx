@@ -17,7 +17,7 @@ function App() {
     },
   ]);
 
-  const addTodo = (assigned, description) => {
+  const addTodo = (assigned: string, description: string) => {
     let rowNumber = 0;
 
     if (todos.length > 0) {
@@ -35,7 +35,7 @@ function App() {
     setTodos((todos) => [...todos, newTodo]);
   };
 
-  const deleteTodo = (deleteTodoRowNumber) => {
+  const deleteTodo = (deleteTodoRowNumber: number) => {
     let filteredArray = todos.filter((value) => {
       return value.rowNumber !== deleteTodoRowNumber;
     });

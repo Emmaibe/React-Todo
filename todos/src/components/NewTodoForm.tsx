@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NewTodoForm = (props) => {
+const NewTodoForm = (props: {addTodo: Function}) => {
   const [assigned, setAssigned] = useState("");
   const [description, setDescription] = useState("");
 
